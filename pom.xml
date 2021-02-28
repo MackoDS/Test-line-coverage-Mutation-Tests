@@ -50,7 +50,7 @@
               <goal>report</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/jacoco</outputDirectory>
+              <outputDirectory>${project.build.directory}/jacoco-reports</outputDirectory>
             </configuration>
           </execution>
         </executions>
