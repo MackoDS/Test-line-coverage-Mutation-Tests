@@ -13,13 +13,13 @@ public class BMITest {
 	
 	App app;
 	
-	@Test
+	/*@Test
 	public void GuessTheUnitsTest1() throws Exception{
 		GuessTheUnits gtu = new GuessTheUnits(1.7,50.0);
 		assertEquals(gtu.getUnitType(),"metric");
 	}
 
-	/*
+
 	@Test
 	public void GuessTheUnitsTest2() throws Exception{
 		
@@ -110,8 +110,6 @@ public class BMITest {
 		assertEquals(app.calculateBMI(),20,0.0);
 		assertEquals(app.bmiResult(),"Normal");
 	}
-
-	// NEW TESTS
 
 
 }
