@@ -97,5 +97,4 @@ public class BMITest {
 		assertEquals(app.bmiResult(),"Normal");
 	}
 
-
 }
