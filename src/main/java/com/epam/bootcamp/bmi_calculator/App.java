@@ -38,6 +38,8 @@ public class App extends Exception
 			ubmi.setBMI(gtu.getWeight(), gtu.getHeight());
 			this.bmi = ubmi.getBMI();
 		}else if(gtu.getUnitType().equals("metric")){
+			// this "else if" statement isn't necessary, should be "else", as it is always true
+			// (unitType is "US" / "metric" / Throws Exception
 			MetricBMI mbmi = new MetricBMI();
 			mbmi.setBMI(gtu.getWeight(), gtu.getHeight());
 			this.bmi = mbmi.getBMI();
@@ -53,8 +55,12 @@ public class App extends Exception
 		if(this.bmi < 18.5){ // Sovány
 			return "Thinness";
 		}else if(this.bmi >= 18.5 && this.bmi <= 24.9){ // Normál testalkatú
+			// to get full line test coverage this should be else if(this.bmi <= 24.9)
+			// as values < 18.5 are caught in previous if statement
 			return "Normal";
 		}else if(this.bmi > 24.9 && this.bmi <= 29.9){ // Túlsúlyos
+			// to get full line test coverage this should be "else if(this.bmi <= 29.9)"
+			// as values <= 24.9 are caught in previous if statement
 			return "Overweight";
 		}else{ // Erősen túlsúlyos
 			return "Heavily overweight";

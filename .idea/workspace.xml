@@ -11,7 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e5594a4d-37f4-4499-be75-b97e1b56a4e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmi-calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bmi-calculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/bootcamp/bmi_calculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/bootcamp/bmi_calculator/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/bootcamp/bmi_calculator/BMITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/bootcamp/bmi_calculator/BMITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/bootcamp/bmi_calculator/GuessTheUnitsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/bootcamp/bmi_calculator/GuessTheUnitsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
-  <component name="RunManager" selected="JAR Application.bmi-calculator-1.0.jar">
+  <component name="RunManager" selected="JUnit.BMITest.BMITest4">
+    <configuration name="BMITest.BMITest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bmi-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.bootcamp.bmi_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.bootcamp.bmi_calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.bootcamp.bmi_calculator.BMITest" />
+      <option name="METHOD_NAME" value="BMITest4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="bmi-calculator-1.0.jar" type="JarApplication" temporary="true">
       <extension name="coverage" runner="jacoco" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/bmi-calculator-1.0.jar" />
@@ -97,9 +117,11 @@
     <list>
       <item itemvalue="JAR Application.bmi-calculator-1.0.jar" />
       <item itemvalue="JAR Application.bmi-calculator.jar" />
+      <item itemvalue="JUnit.BMITest.BMITest4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BMITest.BMITest4" />
         <item itemvalue="JAR Application.bmi-calculator-1.0.jar" />
         <item itemvalue="JAR Application.bmi-calculator.jar" />
       </list>
