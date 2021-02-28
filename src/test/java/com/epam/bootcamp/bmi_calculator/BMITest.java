@@ -1,4 +1,4 @@
-// ORIGINAL TESTS
+// COMPLEMENTED TESTS
 
 package com.epam.bootcamp.bmi_calculator;
 
@@ -13,12 +13,13 @@ public class BMITest {
 	
 	App app;
 	
-	/*@Test
+	@Test
 	public void GuessTheUnitsTest1() throws Exception{
 		GuessTheUnits gtu = new GuessTheUnits(1.7,50.0);
 		assertEquals(gtu.getUnitType(),"metric");
 	}
-	
+
+	/*
 	@Test
 	public void GuessTheUnitsTest2() throws Exception{
 		
@@ -109,5 +110,14 @@ public class BMITest {
 		assertEquals(app.calculateBMI(),20,0.0);
 		assertEquals(app.bmiResult(),"Normal");
 	}
-	
+
+	// NEW TESTS
+
+	@Test
+	public void BMITest9() throws Exception{
+		app.setHeight(200);
+		app.setWeight(80);
+		assertEquals(app.calculateBMI(),20,0.0);
+		assertEquals(app.bmiResult(),"Normal");
+	}
 }
