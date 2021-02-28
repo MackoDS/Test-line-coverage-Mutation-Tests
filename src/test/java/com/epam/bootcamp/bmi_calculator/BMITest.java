@@ -1,3 +1,5 @@
+// ORIGINAL TESTS
+
 package com.epam.bootcamp.bmi_calculator;
 
 import static org.junit.Assert.*;
