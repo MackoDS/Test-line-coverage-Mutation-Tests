@@ -97,4 +97,28 @@ public class BMITest {
 		assertEquals(app.bmiResult(),"Normal");
 	}
 
+
+	// NEW TESTS
+
+	@Test
+	public void BMITest10() throws Exception{
+		try{
+			app.setHeight(0);
+			app.setWeight(0);
+			app.calculateBMI();
+		}catch(Exception e){
+			assertEquals(e.getMessage(),"Height is equals or less than zero.");
+		}
+	}
+
+	@Test
+	public void BMITest11() throws Exception{
+		try{
+			app.setHeight(-1);
+			app.setWeight(-1);
+			app.calculateBMI();
+		}catch(Exception e){
+			assertEquals(e.getMessage(),"Weight is equals or less than zero.");
+		}
+	}
 }
