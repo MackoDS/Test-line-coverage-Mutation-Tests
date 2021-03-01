@@ -43,12 +43,4 @@ public class GuessTheUnitsTest {
 		assertEquals(gtu.getUnitType(),"metric");
 	}
 
-	public void GuessTheUnitsTest6() throws Exception{
-		try{
-			GuessTheUnits gtu = new GuessTheUnits(170,1000);
-			assertEquals(gtu.getUnitType(),"US");
-		}catch(Exception e){
-			assertEquals(e.getMessage(),"Height and weight is in different metric.");
-		}
-	}
 }
