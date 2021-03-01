@@ -7,6 +7,7 @@ import org.junit.rules.ExpectedException;
 
 import com.epam.bootcamp.bmi_calculator.interfacesImplements.MetricBMI;
 
+
 public class BMITest {
 	
 	App app;
@@ -101,24 +102,36 @@ public class BMITest {
 	// NEW TESTS
 
 	@Test
-	public void BMITest10() throws Exception{
+	public void BMITest11() throws Exception {
 		try{
-			app.setHeight(0);
+			app.setHeight(-11);
 			app.setWeight(0);
-			app.calculateBMI();
-		}catch(Exception e){
-			assertEquals(e.getMessage(),"Height is equals or less than zero.");
-		}
-	}
-
-	@Test
-	public void BMITest11() throws Exception{
-		try{
-			app.setHeight(-1);
-			app.setWeight(-1);
 			app.calculateBMI();
 		}catch(Exception e){
 			assertEquals(e.getMessage(),"Weight is equals or less than zero.");
 		}
+	}
+
+	@Test
+	public void BMITest12() throws Exception{
+		app.setHeight(1);
+		app.setWeight(18.5);
+		assertEquals(app.calculateBMI(),18.5,0.0);
+		assertEquals(app.bmiResult(),"Normal");
+	}
+	@Test
+	public void BMITest13() throws Exception{
+		app.setHeight(1);
+		app.setWeight(24.9);
+		assertEquals(app.calculateBMI(),24.9,0.0);
+		assertEquals(app.bmiResult(),"Normal");
+	}
+
+	@Test
+	public void BMITest14() throws Exception{
+		app.setHeight(1);
+		app.setWeight(29.9);
+		assertEquals(app.calculateBMI(),29.9,0.0);
+		assertEquals(app.bmiResult(),"Overweight");
 	}
 }

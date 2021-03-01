@@ -80,9 +80,6 @@
             <param>HTML</param>
             <param>XML</param>
           </outputFormats>
-          <mutators>
-            <mutator>CONDITIONALS_BOUNDARY</mutator>
-          </mutators>
         </configuration>
         <executions>
           <execution>
